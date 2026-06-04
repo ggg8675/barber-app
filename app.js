@@ -12,7 +12,8 @@ let isCodeSent = false; // Флаг: отправлен ли уже код
 const userId = tg.initDataUnsafe?.user?.id || "test_user";
 
 // Сюда мы позже вставим ссылку на твой бесплатный сервер Render
-const SERVER_URL = "https://твой-сервер.onrender.com"; 
+const SERVER_URL = "https://my-web-server-vbgh.onrender.com
+"; 
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
