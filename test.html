@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Booking</title>
+    <!-- Подключаем Телеграм-скрипт, чтобы сайт понимал, что он внутри ТГ -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="booking-container">
+        <h2>Запись на стрижку</h2>
+        
+        <form id="bookingForm">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="" required>
+
+            <label for="phone">Телефон (для связи):</label>
+            <input type="tel" id="phone" placeholder="+7 (707) 123-45-67" required>
+
+            <label for="email">Ваша почта (для электронного чека):</label>
+            <input type="email" id="email" placeholder="example@gmail.com" required>
+
+            <label for="time">Выберите время:</label>
+            <select id="time" required>
+                <option value="">-- Выберите время --</option>
+                <option value="08:00">08:00</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+                <option value="21:00">21:00</option>
+                <option value="22:00">22:00</option>
+            </select>
+
+            <!-- Окно для ввода кода подтверждения (изначально скрыто) -->
+            <div id="codeSection" class="hidden">
+                <p class="info-text">Мы отправили код подтверждения вам в чат с ботом. Введите его ниже:</p>
+                <label for="verifyCode">Код подтверждения:</label>
+                <input type="text" id="verifyCode" placeholder="1234">
+            </div>
+
+            <button type="submit" id="mainBtn">Получить код</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

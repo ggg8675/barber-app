@@ -1,0 +1,79 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #181818;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.booking-container {
+    width: 100%;
+    max-width: 400px;
+    background: #242424;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+h2 {
+    text-align: center;
+    color: #e5c158; /* Красивый золотистый цвет для барбершопа */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    background-color: #2a2a2a;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #e5c158;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e5c158;
+    color: #181818;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #d4b047;
+}
+
+.hidden {
+    display: none;
+}
+
+.info-text {
+    font-size: 13px;
+    color: #e5c158;
+    background: rgba(229, 193, 88, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+    border-left: 3px solid #e5c158;
+}
